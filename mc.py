@@ -32,7 +32,7 @@ def Integral(i,n):        # Integration function for multiprocessing routine
     return V/n*f(arrayx[i],arrayy[i],arrayz[i])
 
 
-for n in tqdm(range(int(start),int(maxiter+incr),int(incr)),desc="Status",ascii=False,ncols=100):
+for n in tqdm(range(int(start),int(maxiter),int(incr)),desc="Status",ascii=False,ncols=100):
 
     # Array of length N filled with zeros 
     arrayx = npy.zeros(n)
